@@ -1,0 +1,107 @@
+.card-margin {
+    max-width: 95% !important; /* Asegura que la card no ocupe toda la pantalla */
+    margin: 20px auto; /* Centra la card */
+    padding: 20px;
+    display: flex;
+}
+
+/* Botones personalizados */
+.nav-customize .nav-link {
+    background-color: #6a0dad !important; /* Morado base */
+    color: white !important;
+    border: none !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px 10px !important;
+}
+
+/* Hover */
+.nav-customize .nav-link:hover {
+    background-color: #4b0082 !important; /* Morado más oscuro */
+    color: white !important;
+}
+
+/* Activo - seleccionado */
+.nav-customize .nav-link.active,
+.nav-customize .nav-link:active {
+    background-color: #6a0dad !important; /* Morado claro */
+    color: white !important;
+}
+
+
+/* Elimina algún background-color heredado por Bootstrap en caso de conflictos */
+.nav-customize .nav-link:not(.active) {
+    background-color: #9b59b6 !important; /* Fuerza el color base para los no seleccionados */
+}
+
+/*Botones*/
+.btn-linka {
+    background-color: none !important;
+    color: rgb(214, 108, 108) !important;  /* Establece el color del texto a blanco */
+    text-decoration: none !important;  /* Elimina el subrayado */
+}
+
+/* Cambiar el color al pasar el cursor (sin subrayado) */
+.btn-linka:hover {
+    color: white !important;  /* Mantiene el color blanco cuando se pasa el cursor */
+    text-decoration: none !important;  /* Asegura que no haya subrayado */
+    cursor: pointer !important;  /* Cambia el cursor a una mano */
+}
+
+
+.btn-linkb {
+    background-color: none !important;
+    color: rgb(122, 36, 36) !important;  /* Establece el color del texto a blanco */
+    text-decoration: none !important;  /* Elimina el subrayado */
+}
+
+.btn-linkb:hover {
+    color: white !important;  /* Mantiene el color blanco cuando se pasa el cursor */
+    text-decoration: none !important;  /* Asegura que no haya subrayado */
+    cursor: pointer !important;  /* Cambia el cursor a una mano */
+}
+
+
+.img-shadow {
+    filter: drop-shadow(1px 0 0 rgba(255,255,255,1));
+}
+
+.backgd-iecm {
+    background: rgb(193,170,208) !important;
+    background: linear-gradient(180deg, rgba(193,170,208,1) 14%, rgba(255,255,255,0.3337710084033614) 97%) !important;
+}
+
+
+/* Cambia el color de fondo del botón del accordion */
+.accordion-button {
+    background-color: white !important;
+    color: black !important;
+}
+
+/* Cambia el color cuando el accordion está activo (abierto) */
+.accordion-button:not(.collapsed) {
+    background-color: #7d4c9e !important; 
+    color: white !important;
+}
+
+/* Mantiene el borde predefinido de Bootstrap */
+.accordion-button:focus {
+    box-shadow: none !important;
+    border-color: inherit !important;
+}
+
+
+/* Oculta la flecha predeterminada */
+.accordion-button::after {
+    content: "+" !important;
+    font-size: 25px;
+    color: black;
+    background-image: none !important;
+    transform: none !important;
+}
+
+/* Cambia el "+" por "-" cuando el accordion está abierto */
+.accordion-button:not(.collapsed)::after {
+    content: "-" !important;
+    color: white;
+}
+
